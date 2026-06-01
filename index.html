@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Chores</title>
+<meta name="description" content="Privacy policy for Chores, a family chore-and-reward tracker by Slyder Consulting Group.">
+<style>
+  :root {
+    --teal: #0f2a30;
+    --teal-light: #21787a;
+    --ink: #1c2b2e;
+    --muted: #5d6f72;
+    --bg: #f6f8f8;
+    --card: #ffffff;
+    --border: #e2e8e8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 64px; }
+  header {
+    background: linear-gradient(160deg, #15414b 0%, var(--teal) 100%);
+    color: #fff;
+    padding: 48px 20px 40px;
+    text-align: center;
+  }
+  header .badge {
+    width: 64px; height: 64px; border-radius: 16px;
+    background: rgba(255,255,255,0.12);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 34px; margin-bottom: 16px;
+  }
+  header h1 { margin: 0; font-size: 1.9rem; letter-spacing: -0.01em; }
+  header p { margin: 8px 0 0; color: #b9d6d6; font-size: 0.95rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 8px 28px 28px;
+    margin-top: -24px;
+    box-shadow: 0 6px 24px rgba(15,42,48,0.07);
+  }
+  h2 {
+    font-size: 1.2rem; margin: 32px 0 8px;
+    color: var(--teal); letter-spacing: -0.01em;
+  }
+  p, li { color: var(--ink); }
+  ul { padding-left: 22px; }
+  li { margin: 8px 0; }
+  a { color: var(--teal-light); }
+  strong { color: var(--teal); }
+  .updated { color: var(--muted); font-size: 0.9rem; }
+  footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 28px; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0c1416; --card:#13211f; --ink:#e8efee; --muted:#9fb2b2; --border:#23332f; --teal:#0f2a30; }
+    body { color: var(--ink); }
+    strong, h2 { color: #5ed6b2; }
+    a { color: #7fe0c2; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="badge">✓</div>
+  <h1>Privacy Policy — Chores</h1>
+  <p>A family chore-and-reward tracker by Slyder Consulting Group</p>
+</header>
+<div class="wrap">
+  <div class="card">
+    <p class="updated"><em>Last updated: May 30, 2026</em></p>
+    <p>Chores is a family chore-and-reward tracker. This policy explains, in plain language, what the app collects and why. No fluff.</p>
+
+    <h2>Who runs this app</h2>
+    <p>Chores is operated by <strong>Slyder Consulting Group</strong>. Questions about your data: <a href="mailto:support@slyderconsultinggroup.com">support@slyderconsultinggroup.com</a>.</p>
+
+    <h2>What we collect</h2>
+    <p>We only collect what the app needs to work:</p>
+    <ul>
+      <li><strong>Parent account:</strong> the email address and password you sign up with. Passwords are hashed by our authentication provider — we never see or store your plain password.</li>
+      <li><strong>Family content you create:</strong> your family name, the names you give your kids, chores, chore completions, awards, and cash-out records. Kids do <strong>not</strong> create their own accounts and we do <strong>not</strong> collect email addresses, phone numbers, or contact info for children.</li>
+      <li><strong>Optional kid PIN:</strong> if you set a 4-digit quick-switch PIN for a child, it is stored only as a one-way hash (we can't read it back).</li>
+    </ul>
+    <p>We do <strong>not</strong> collect location, contacts, photos, device advertising IDs, or browsing history. We do <strong>not</strong> show ads.</p>
+
+    <h2>How your data is stored and protected</h2>
+    <ul>
+      <li>Your data is stored in a hosted <strong>Supabase</strong> (PostgreSQL) database.</li>
+      <li>Every record is isolated per family using database row-level security: one family can never read another family's data.</li>
+      <li>Your login session is kept in your device's secure keychain/keystore (encrypted at rest by the operating system).</li>
+      <li>Data is encrypted in transit (HTTPS/TLS) between the app and the database.</li>
+    </ul>
+
+    <h2>How we use it</h2>
+    <p>Only to run the app for you: signing you in, syncing chores and rewards across your family's devices, and calculating points, earnings, and awards. We do not sell your data, and we do not use it for advertising or share it with third parties for their own marketing.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Chores is designed to be set up and controlled by a parent or guardian. Children are added by a parent as managed profiles inside the parent's account; they don't register, don't provide personal contact information, and can't access another family's data. Parents can edit or delete a child's profile and its history at any time from the <strong>Family</strong> tab.</p>
+
+    <h2>Third parties</h2>
+    <ul>
+      <li><strong>Supabase</strong> — our database and authentication provider (data hosting).</li>
+      <li><strong>Expo / app store platforms</strong> — used to build and distribute the app.</li>
+    </ul>
+    <p>These providers process data on our behalf to deliver the service. We don't use analytics or advertising SDKs.</p>
+
+    <h2>Keeping or deleting your data</h2>
+    <ul>
+      <li>Remove a child (and their history) from the <strong>Family</strong> tab.</li>
+      <li>To delete your entire account and your family's data, open <strong>Settings → Delete account</strong> in the app. If you're the only parent, this also deletes your family's chores, awards, balances, and history. You can also email the contact above and we'll remove it.</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, we'll update the date at the top and, for significant changes, note it in the app.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:support@slyderconsultinggroup.com">support@slyderconsultinggroup.com</a></p>
+  </div>
+  <footer>© 2026 Slyder Consulting Group · Chores</footer>
+</div>
+</body>
+</html>
